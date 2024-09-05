@@ -3,7 +3,7 @@ export default [
       "id": "printing-press",
       "name": "Imprenta",
       "shortDescription": "Invención de la imprenta por Johannes Gutenberg.",
-      "description": "En 1440, Johannes Gutenberg inventó la imprenta de tipos móviles, lo que permitió la producción en masa de libros y la difusión del conocimiento.",
+      "description": "Inventada por Johannes Gutenberg en 1440, la imprenta mecanizó la producción de libros, acelerando la difusión del conocimiento y permitiendo la reproducción masiva de textos. La Biblia de Gutenberg fue uno de los primeros libros impresos, marcando un hito en la historia de la cultura. Este invento facilitó la expansión de la alfabetización y fue crucial en movimientos como la Reforma Protestante y el Renacimiento, contribuyendo al progreso científico, cultural y social de la humanidad.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1440,
@@ -18,7 +18,7 @@ export default [
       "id": "light-bulb",
       "name": "Bombilla",
       "shortDescription": "Invención de la bombilla eléctrica por Thomas Edison.",
-      "description": "En 1879, Thomas Edison presentó la bombilla eléctrica, un invento que llevó la iluminación a los hogares y cambió la vida nocturna.",
+      "description": "La bombilla eléctrica, patentada por Thomas Edison en 1879, transformó la forma en que la humanidad utiliza la energía. Aunque otros inventores también trabajaron en este campo, el diseño de Edison fue el más práctico y duradero. Al proporcionar luz artificial fiable y accesible, la bombilla permitió la expansión de actividades nocturnas y el crecimiento de ciudades iluminadas, cambiando la dinámica social y económica del mundo. Su invención marcó el inicio de la era eléctrica.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1879,
@@ -33,7 +33,7 @@ export default [
       "id": "telephone",
       "name": "Teléfono",
       "shortDescription": "Invención del teléfono por Alexander Graham Bell.",
-      "description": "En 1876, Alexander Graham Bell patentó el teléfono, revolucionando las comunicaciones a larga distancia.",
+      "description":"Alexander Graham Bell inventó el teléfono en 1876, un dispositivo que convirtió la voz humana en señales eléctricas y las transmitió a través de cables, revolucionando la comunicación a larga distancia. El teléfono permitió a las personas comunicarse instantáneamente, eliminando barreras geográficas. Esta tecnología evolucionó hasta convertirse en una herramienta esencial de la vida moderna, abriendo el camino para los sistemas de comunicación que hoy conocemos, incluyendo la telefonía móvil e internet.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1876,
@@ -63,7 +63,7 @@ export default [
       "id": "internet",
       "name": "Internet",
       "shortDescription": "La creación de Internet como red global.",
-      "description": "En 1983, el sistema de nombres de dominio (DNS) fue implementado, marcando el nacimiento del Internet moderno como una red global interconectada.",
+      "description":"El internet, desarrollado a partir de la red ARPANET en la década de 1960, es una infraestructura global que permite la interconexión de computadoras y dispositivos en todo el mundo. Su evolución ha transformado la comunicación, la educación, los negocios y el entretenimiento, creando un espacio digital donde la información es accesible al instante. El internet ha redefinido cómo las personas interactúan, facilitando una nueva era de innovación y colaboración global sin precedentes.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1983,
@@ -78,7 +78,7 @@ export default [
       "id": "printing-press",
       "name": "Telégrafo",
       "shortDescription": "Samuel Morse y la invención del telégrafo.",
-      "description": "En 1837, Samuel Morse desarrolló el telégrafo, permitiendo la transmisión de mensajes a largas distancias mediante código Morse.",
+      "description": "En 1837, Samuel Morse desarrolló el telégrafo, un revolucionario dispositivo que permitió la transmisión de mensajes a largas distancias mediante impulsos eléctricos. Utilizando su propio sistema de código, conocido como código Morse, los mensajes se convertían en una secuencia de puntos y rayas que representaban letras y números. Este avance facilitó la comunicación en tiempo real entre ciudades e incluso países, cambiando radicalmente la forma en que las personas compartían información. El telégrafo se convirtió en una pieza clave en el desarrollo de la infraestructura de comunicaciones, acelerando el progreso de la economía, el comercio y la política global.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1837,
@@ -93,7 +93,7 @@ export default [
       "id": "radio",
       "name": "Radio",
       "shortDescription": "Guglielmo Marconi y la transmisión inalámbrica de señales.",
-      "description": "En 1895, Guglielmo Marconi realizó la primera transmisión de señales de radio, abriendo las puertas a la comunicación inalámbrica.",
+      "description": "En 1895, Guglielmo Marconi logró la primera transmisión exitosa de señales de radio, marcando el inicio de la comunicación inalámbrica. Este avance revolucionario permitió enviar señales a través del aire sin necesidad de cables, lo que cambió para siempre la forma en que las personas se comunicaban a larga distancia. Inicialmente utilizado para la comunicación marítima, el invento de Marconi pronto se expandió a otros campos, desde la radiodifusión hasta las telecomunicaciones militares. Su trabajo sentó las bases para el desarrollo de tecnologías como la televisión, los teléfonos móviles y el internet inalámbrico, transformando la sociedad moderna.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1895,
@@ -108,7 +108,7 @@ export default [
       "id": "automobile",
       "name": "Automóvil",
       "shortDescription": "Henry Ford y la producción en masa del automóvil.",
-      "description": "En 1908, Henry Ford lanzó el Modelo T, haciendo el automóvil accesible a las masas y revolucionando el transporte.",
+      "description": "En 1908, Henry Ford lanzó el icónico Modelo T, un automóvil que revolucionó el transporte al hacerlo accesible para las masas. Gracias a la implementación de la línea de producción en serie, Ford pudo reducir drásticamente los costos de fabricación, lo que permitió que el Modelo T fuera asequible para el público general. Este avance transformó la movilidad en todo el mundo, cambiando la forma en que las personas trabajaban, vivían y viajaban. El Modelo T no solo democratizó el automóvil, sino que también impulsó el crecimiento de la industria automotriz y moldeó la sociedad moderna al fomentar el desarrollo de carreteras y la expansión urbana.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1908,
@@ -123,7 +123,7 @@ export default [
       "id": "computer",
       "name": "Computadora",
       "shortDescription": "La invención de la computadora moderna.",
-      "description": "En 1946, se presentó la ENIAC, una de las primeras computadoras electrónicas de propósito general, sentando las bases para la revolución digital.",
+      "description": "En 1946, se presentó la ENIAC (Electronic Numerical Integrator and Computer), una de las primeras computadoras electrónicas de propósito general, que marcó un hito en la historia de la tecnología. Esta máquina, desarrollada por John Presper Eckert y John William Mauchly, fue capaz de realizar cálculos complejos a una velocidad sin precedentes para la época. Con más de 17,000 tubos de vacío y ocupando una sala completa, la ENIAC sentó las bases para la revolución digital, abriendo el camino para el desarrollo de computadoras más avanzadas y eficientes, que han transformado la ciencia, la industria y la vida cotidiana a nivel global.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1946,
@@ -138,7 +138,7 @@ export default [
       "id": "microchip",
       "name": "Microchip",
       "shortDescription": "Jack Kilby y la creación del primer microchip.",
-      "description": "En 1958, Jack Kilby inventó el microchip, un componente clave para la miniaturización de los dispositivos electrónicos y la expansión de la tecnología digital.",
+      "description": "En 1958, Jack Kilby inventó el microchip, un pequeño circuito integrado que revolucionó el mundo de la electrónica. Este innovador componente permitió la miniaturización de los dispositivos electrónicos al integrar múltiples transistores en un solo chip, reduciendo significativamente su tamaño y costo. El microchip fue fundamental para el desarrollo de computadoras más pequeñas, rápidas y accesibles, lo que impulsó la expansión de la tecnología digital en áreas como la informática, las telecomunicaciones y la electrónica de consumo. Su invención marcó el comienzo de la era moderna de la tecnología, transformando industrias y la vida cotidiana.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1958,
@@ -153,7 +153,7 @@ export default [
       "id": "nuclear-energy",
       "name": "Energía Nuclear",
       "shortDescription": "La primera prueba de una bomba atómica.",
-      "description": "En 1945, se realizó la primera prueba exitosa de una bomba atómica en el desierto de Nuevo México, marcando el inicio de la era nuclear.",
+      "description": "En 1945, se llevó a cabo la primera prueba exitosa de una bomba atómica en el desierto de Nuevo México, conocida como la prueba Trinity. Este evento histórico marcó el inicio de la era nuclear y demostró el poder destructivo de las armas nucleares. La explosión, realizada como parte del Proyecto Manhattan, abrió nuevas posibilidades en la física nuclear y desencadenó una carrera armamentista durante la Guerra Fría. La prueba también tuvo profundas implicaciones para la política global, la estrategia militar y la percepción pública de la energía nuclear, estableciendo un nuevo capítulo en la historia de la humanidad.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1945,
@@ -168,7 +168,7 @@ export default [
       "id": "penicillin",
       "name": "Penicilina",
       "shortDescription": "Descubrimiento de la penicilina por Alexander Fleming.",
-      "description": "En 1928, Alexander Fleming descubrió la penicilina, el primer antibiótico efectivo, que revolucionó la medicina y salvó millones de vidas.",
+      "description": "En 1928, Alexander Fleming descubrió la penicilina, el primer antibiótico eficaz, mientras investigaba cultivos de bacterias en su laboratorio. Este descubrimiento revolucionó el campo de la medicina al proporcionar un tratamiento efectivo contra una amplia gama de infecciones bacterianas que antes eran potencialmente mortales. La penicilina marcó el inicio de la era de los antibióticos, transformando el tratamiento de enfermedades infecciosas y salvando millones de vidas en todo el mundo. Su impacto en la salud pública fue tan profundo que cambió el curso de la historia médica, estableciendo nuevas posibilidades para el tratamiento y prevención de enfermedades.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1928,
@@ -183,7 +183,7 @@ export default [
       "id": "transistor",
       "name": "Transistor",
       "shortDescription": "Invención del transistor por Bardeen, Brattain y Shockley.",
-      "description": "En 1947, John Bardeen, Walter Brattain y William Shockley inventaron el transistor, que permitió el desarrollo de la electrónica moderna.",
+      "description": "En 1947, John Bardeen, Walter Brattain y William Shockley inventaron el transistor, un componente fundamental que revolucionó la electrónica moderna. Este dispositivo semiconductor permitió amplificar y conmutar señales eléctricas con una eficiencia sin precedentes, lo que facilitó la miniaturización y mejora de los circuitos electrónicos. La invención del transistor no solo impulsó el desarrollo de computadoras más rápidas y accesibles, sino que también abrió el camino para la creación de dispositivos electrónicos portátiles como radios y teléfonos móviles. Este avance sentó las bases para la era digital, transformando industrias enteras y cambiando la vida cotidiana a nivel global.",
       "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
       "facts": {
         "yearOfEvent": 1947,
