@@ -251,7 +251,7 @@ export default [
         "impact": "Revolucionó la navegación, permitiendo la exploración global y la expansión del comercio."
       },
       "extraInfo": {
-        "imageSource": "https://www.britannica.com/technology/compass-navigational-instrument"
+        "imageSource": ""
       }
     },
     {
