@@ -201,7 +201,7 @@ export default [
       "description": "Desde el descubrimiento de la penicilina en 1928 por Alexander Fleming, los antibióticos ha transformado radicalmente la medicina moderna. Han permitido tratar con eficacia una amplia gama de infecciones bacterianas que antes eran letales. La evolución de los antibióticos ha dado lugar a tratamientos específicos para enfermedades como la tuberculosis, la neumonía y la septicemia. La introducción de nuevas generaciones de antibióticos ha mejorado significativamente la tasa de supervivencia y ha reducido la mortalidad por infecciones. Este avance ha tenido un impacto profundo en la salud pública, salvando millones de vidas y revolucionando la forma en que tratamos las enfermedades infecciosas.",
       "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281379999647272971/maldito_genio_A_visual_representation_of_the_transformative_imp_f4e93ebe-0028-467a-a6d5-2253eca409dc.png?ex=66db819e&is=66da301e&hm=ffbef9680ef78a1b2517b579b02c1e520299b7bdb7b8ed9fc7e4dc1a87791f3e&=&format=webp&quality=lossless&width=468&height=468",
       "facts": {
-        "yearOfEvent": "1940-2020",
+        "yearOfEvent": 1928,
         "location": "Estados Arabes",
         "impact": "Revolucionó el tratamiento de enfermedades infecciosas."
       },
@@ -231,7 +231,7 @@ export default [
       "description":"Alrededor del siglo IX, marcando un cambio radical en la guerra y la tecnología militar. Esta mezcla explosiva de nitrato de potasio, carbón y azufre permitió el desarrollo de armas de fuego, cañones y explosivos, transformando las tácticas y estrategias militares. La pólvora revolucionó el campo de batalla al proporcionar un poder destructivo sin precedentes, lo que llevó a la creación de nuevos armas. Su impacto alteró el curso de la historia militar, y también facilitó avances en la ingeniería y la minería, extendiendo su influencia a diversos campos de la tecnología.",
       "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281380996071292928/maldito_genio_A_historical_scene_from_around_the_9th_century_in_43e1ecf9-6a4f-4c57-9155-ab81ea187e9f.png?ex=66db828c&is=66da310c&hm=fe5cb2ebf1bdee515575ead509798a5b23979c9c26763847bcac092ceff52df8&=&format=webp&quality=lossless&width=468&height=468",
       "facts": {
-        "yearOfEvent": "9th Century",
+        "yearOfEvent": 904,
         "location": "China",
         "impact": "Revolucionó la guerra y llevó al desarrollo de armas de fuego."
       },
@@ -246,7 +246,7 @@ export default [
       "description": "La brújula, desarrollada en China, alrededor del siglo II a.C., fue un invento clave que revolucionó la navegación y la exploración mundial. Utilizando una aguja magnetizada que apunta al norte magnético, la brújula permitió a los marineros y exploradores determinar su dirección con precisión, incluso en condiciones de visibilidad limitada. Este avance facilitó la expansión de rutas comerciales y la exploración de nuevas tierras, contribuyendo significativamente al intercambio cultural y económico global. La brújula se convirtió en una herramienta esencial para la navegación marítima y terrestre, marcando el inicio de una era de descubrimientos y conexiones globales.",
       "imageUrl": "https://media.discordapp.net/ephemeral-attachments/976997386436104202/1281381940506660905/maldito_genio_A_historical_scene_from_around_the_2nd_century_BC_da379bff-d7c5-4d2b-82ba-6d8503476a65.png?ex=66db836d&is=66da31ed&hm=ec8d567d76832d6a00aba8763129a331385dcb06b62f9beec5caece3b82f7976&=&format=webp&quality=lossless&width=468&height=468",
       "facts": {
-        "yearOfEvent": "2nd Century BC",
+        "yearOfEvent": 206,
         "location": "China",
         "impact": "Revolucionó , la exploración global y la expansión del comercio."
       },
