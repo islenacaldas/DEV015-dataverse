@@ -169,14 +169,14 @@ export default [
       "name": "Penicilina",
       "shortDescription": "Descubrimiento de la penicilina por Alexander Fleming.",
       "description": "En 1928, Alexander Fleming descubrió la penicilina, el primer antibiótico eficaz, mientras investigaba cultivos de bacterias en su laboratorio. Este descubrimiento revolucionó el campo de la medicina al proporcionar un tratamiento efectivo contra una amplia gama de infecciones bacterianas que antes eran potencialmente mortales. La penicilina marcó el inicio de la era de los antibióticos, transformando el tratamiento de enfermedades infecciosas y salvando millones de vidas en todo el mundo. Su impacto en la salud pública fue tan profundo que cambió el curso de la historia médica, estableciendo nuevas posibilidades para el tratamiento y prevención de enfermedades.",
-      "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281378348496588870/maldito_genio_A_historic_laboratory_scene_from_1928_depicting_A_502a6452-8f26-47da-a7d8-eb26a085881f.png?ex=66db8015&is=66da2e95&hm=787e255d4078aa79cbef3361be51c17919470fb688b7a38f421f57046917146d&=&format=webp&quality=lossless&width=350&height=350",
+      "imageUrl":"https://th.bing.com/th/id/OIG1.Qs2y0QjZlHglm0wty0ZI?pid=ImgGn",
       "facts": {
         "yearOfEvent": 1928,
         "location": "England",
         "impact": "Transformó la medicina,tratamiento efectivo de infecciones."
       },
       "extraInfo": {
-        "imageSource": "https://media.discordapp.net/attachments/976997386436104202/1281378348496588870/maldito_genio_A_historic_laboratory_scene_from_1928_depicting_A_502a6452-8f26-47da-a7d8-eb26a085881f.png?ex=66db8015&is=66da2e95&hm=787e255d4078aa79cbef3361be51c17919470fb688b7a38f421f57046917146d&=&format=webp&quality=lossless&width=350&height=350"
+        "imageSource": "https://th.bing.com/th/id/OIG1.Qs2y0QjZlHglm0wty0ZI?pid=ImgGn"
       }
     },
     {
@@ -184,14 +184,14 @@ export default [
       "name": "Transistor",
       "shortDescription": "Invención del transistor por Bardeen, Brattain y Shockley.",
       "description": "En 1947, John Bardeen, Walter Brattain y William Shockley inventaron el transistor, un componente fundamental que revolucionó la electrónica moderna. Este dispositivo semiconductor permitió amplificar y conmutar señales eléctricas con una eficiencia sin precedentes, lo que facilitó la miniaturización y mejora de los circuitos electrónicos. La invención del transistor no solo impulsó el desarrollo de computadoras más rápidas y accesibles, sino que también abrió el camino para la creación de dispositivos electrónicos portátiles como radios y teléfonos móviles. Este avance sentó las bases para la era digital, transformando industrias enteras y cambiando la vida cotidiana a nivel global.",
-      "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281379050568548352/maldito_genio_A_detailed_scene_from_1947_in_a_laboratory_settin_61841798-9264-4720-9592-7fa1b0cccb33.png?ex=66db80bc&is=66da2f3c&hm=47b746363329ba7e2736ee25dfdf633a4b374be188c894bedfb56d921e88f75a&=&format=webp&quality=lossless&width=468&height=468",
+      "imageUrl": "https://th.bing.com/th/id/OIG1.koMyQZltRB_t_QbxqO1C?w=1024&h=1024&rs=1&pid=ImgDetMain",
       "facts": {
         "yearOfEvent": 1947,
         "location": "USA",
         "impact": "Sentó las bases para la revolución informática."
       },
       "extraInfo": {
-        "imageSource": "https://media.discordapp.net/attachments/976997386436104202/1281379050568548352/maldito_genio_A_detailed_scene_from_1947_in_a_laboratory_settin_61841798-9264-4720-9592-7fa1b0cccb33.png?ex=66db80bc&is=66da2f3c&hm=47b746363329ba7e2736ee25dfdf633a4b374be188c894bedfb56d921e88f75a&=&format=webp&quality=lossless&width=468&height=468"
+        "imageSource" : "https://th.bing.com/th/id/OIG1.koMyQZltRB_t_QbxqO1C?w=1024&h=1024&rs=1&pid=ImgDetMain",
       }
     },
     {
@@ -199,14 +199,14 @@ export default [
       "name": "Antibióticos",
       "shortDescription": "Desarrollo de antibióticos modernos.",
       "description": "Desde el descubrimiento de la penicilina en 1928 por Alexander Fleming, los antibióticos ha transformado radicalmente la medicina moderna. Han permitido tratar con eficacia una amplia gama de infecciones bacterianas que antes eran letales. La evolución de los antibióticos ha dado lugar a tratamientos específicos para enfermedades como la tuberculosis, la neumonía y la septicemia. La introducción de nuevas generaciones de antibióticos ha mejorado significativamente la tasa de supervivencia y ha reducido la mortalidad por infecciones. Este avance ha tenido un impacto profundo en la salud pública, salvando millones de vidas y revolucionando la forma en que tratamos las enfermedades infecciosas.",
-      "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281379999647272971/maldito_genio_A_visual_representation_of_the_transformative_imp_f4e93ebe-0028-467a-a6d5-2253eca409dc.png?ex=66db819e&is=66da301e&hm=ffbef9680ef78a1b2517b579b02c1e520299b7bdb7b8ed9fc7e4dc1a87791f3e&=&format=webp&quality=lossless&width=468&height=468",
+      "imageUrl": "https://th.bing.com/th/id/OIG3.hiD1SMu_MrSIz4CFlWrU?pid=ImgGn",
       "facts": {
         "yearOfEvent": 1928,
         "location": "Estados Arabes",
         "impact": "Revolucionó el tratamiento de enfermedades infecciosas."
       },
       "extraInfo": {
-        "imageSource": "https://media.discordapp.net/attachments/976997386436104202/1281379999647272971/maldito_genio_A_visual_representation_of_the_transformative_imp_f4e93ebe-0028-467a-a6d5-2253eca409dc.png?ex=66db819e&is=66da301e&hm=ffbef9680ef78a1b2517b579b02c1e520299b7bdb7b8ed9fc7e4dc1a87791f3e&=&format=webp&quality=lossless&width=468&height=468"
+        "imageSource": "https://th.bing.com/th/id/OIG3.hiD1SMu_MrSIz4CFlWrU?pid=ImgGn"
       }
     },
     {
@@ -214,14 +214,14 @@ export default [
       "name": "Barco de vapor",
       "shortDescription": "Robert Fulton y el desarrollo del barco de vapor.",
       "description":"En 1807, Robert Fulton lanzó el 'Clermont', el primer barco de vapor comercialmente exitoso, marcando un hito en el transporte marítimo. Este innovador barco, que navegó por el río Hudson, demostró la viabilidad de la propulsión por vapor en lugar de la tradicional energía eólica. La introducción del 'Clermont' revolucionó el transporte fluvial al ofrecer una navegación más rápida, confiable y eficiente. Este avance facilitó el comercio y la movilidad a lo largo de ríos y canales, impulsando el desarrollo económico y la expansión territorial, y sentando las bases para la evolución del transporte marítimo moderno.",
-      "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281380506499551232/maldito_genio_A_historic_scene_from_1807_depicting_Robert_Fulto_cd6f48b5-02f4-4b7f-9776-e0f7d97b8a4a.png?ex=66db8217&is=66da3097&hm=2d538aaa5cf973935b6ab10c1ebecf71b6fa40e1d2f6664c6a190fd84c4945b9&=&format=webp&quality=lossless&width=468&height=468",
+      "imageUrl": "https://th.bing.com/th/id/OIG3.kfsSJUbYJ1ZOf.ISI0l8?w=1024&h=1024&rs=1&pid=ImgDetMain",
       "facts": {
         "yearOfEvent": 1807,
         "location": "USA",
         "impact": "Facilitó el comercio y la expansión del transporte marítimo."
       },
       "extraInfo": {
-        "imageSource": "https://media.discordapp.net/attachments/976997386436104202/1281380506499551232/maldito_genio_A_historic_scene_from_1807_depicting_Robert_Fulto_cd6f48b5-02f4-4b7f-9776-e0f7d97b8a4a.png?ex=66db8217&is=66da3097&hm=2d538aaa5cf973935b6ab10c1ebecf71b6fa40e1d2f6664c6a190fd84c4945b9&=&format=webp&quality=lossless&width=468&height=468"
+        "imageSource": "https://th.bing.com/th/id/OIG3.kfsSJUbYJ1ZOf.ISI0l8?w=1024&h=1024&rs=1&pid=ImgDetMain"
       }
     },
     {

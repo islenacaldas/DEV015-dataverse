@@ -3,4 +3,8 @@ import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
 
-console.log(example, renderItems(data), data);
+const container = document.getElementById("grid-container");
+container.appendChild(renderItems(data));
+
+
+console.log(example);
