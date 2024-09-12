@@ -1,5 +1,6 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
+import { filterData } from './dataFunctions.js';
 
 import data from './data/dataset.js';
 
