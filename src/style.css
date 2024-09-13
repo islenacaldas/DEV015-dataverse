@@ -1,12 +1,15 @@
-.grid-container{
-    display: flex;
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     gap: 20px;
-    padding: 20px;
+   list-style: none;
 }
 
-.grid-item{
-flex: 1 1 300px;
+li{
+width: 25%;
+border: 1px solid red;
+padding: 20px;
 }
