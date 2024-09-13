@@ -7,7 +7,7 @@ export default [
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIG1.Sv__i1t9gVutR_Yaeho.&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1440,
-      "location": "Mainz, Alemania",
+      "location": "Mainz, Germany",
       "impact": "Revolucionó la educación, la comunicación y aceleró el Renacimiento."
     },
     "extraInfo": {
@@ -97,7 +97,7 @@ export default [
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIG4._F9w83SWL3gsbg8zDIAh&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1895,
-      "location": "Bologna, Italia",
+      "location": "Bologna, Italy",
       "impact": "Revolucionó las comunicaciones y el entretenimiento, permitiendo la transmisión de información a grandes audiencias."
     },
     "extraInfo": {
@@ -172,7 +172,7 @@ export default [
     "imageUrl":"https://th.bing.com/th/id/OIG1.Qs2y0QjZlHglm0wty0ZI?pid=ImgGn",
     "facts": {
       "yearOfEvent": 1928,
-      "location": "Inglaterra",
+      "location": "England",
       "impact": "Transformó la medicina,tratamiento efectivo de infecciones."
     },
     "extraInfo": {
@@ -202,7 +202,7 @@ export default [
     "imageUrl": "https://th.bing.com/th/id/OIG3.hiD1SMu_MrSIz4CFlWrU?pid=ImgGn",
     "facts": {
       "yearOfEvent": 1928,
-      "location": "Estados Arabes",
+      "location": "Arab States",
       "impact": "Revolucionó el tratamiento de enfermedades infecciosas."
     },
     "extraInfo": {
@@ -292,7 +292,7 @@ export default [
     "imageUrl": "https://th.bing.com/th/id/OIG2.a50Y_Abh2GeGF.RtF5TF?pid=ImgGn",
     "facts": {
       "yearOfEvent": 1941,
-      "location": "Reino unido",
+      "location": "United Kingdom",
       "impact": "Transformó la moda y la produccion a bajo costo."
     },
     "extraInfo": {
@@ -337,7 +337,7 @@ export default [
     "imageUrl": "https://th.bing.com/th/id/OIG1.8pesmTEslxGB8r_CgWnC?w=1024&h=1024&rs=1&pid=ImgDetMain",
     "facts": {
       "yearOfEvent": 1875,
-      "location": "Antigua Grecia",
+      "location": "Ancient Greece",
       "impact": "Cambió la vida cotidiana con una fuente de energía constante."
     },
     "extraInfo": {
@@ -368,7 +368,7 @@ export default [
     "imageUrl": "https://th.bing.com/th/id/OIG2.r52pFgN0t5_uQdVuhJIO?w=1024&h=1024&rs=1&pid=ImgDetMain",
     "facts": {
       "yearOfEvent": 1940,
-      "location": "Londres",
+      "location": "London",
       "impact": "Transformó la cultura, la política y el entretenimiento, convirtiéndose en un medio influyente en la sociedad."
     },
     "extraInfo": {

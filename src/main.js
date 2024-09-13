@@ -11,8 +11,9 @@ const countrySelect= document.getElementById('countryFilter');
 container.appendChild(renderItems(data));
 
 
-console.log(renderItems);
+/*console.log(renderItems);*/
 
 countrySelect.addEventListener("change", ()=>{
-  filterData(data, "location", countrySelect.value)
+ const filteredData = filterData(data, "location", countrySelect.value)
+ console.log(filteredData)
 })
