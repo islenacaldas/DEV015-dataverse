@@ -380,14 +380,14 @@ export default [
     "name": "Cohete",
     "shortDescription": "Desarrollo de la tecnología de cohetes.",
     "description":"Durante el siglo XX, el desarrollo de la tecnología de cohetes marcó un avance significativo en la exploración espacial y la defensa militar. Los primeros cohetes, basados en principios de propulsión que datan de siglos atrás, evolucionaron rápidamente, permitiendo el lanzamiento de satélites y misiones tripuladas al espacio. El hito del Sputnik en 1957 y la llegada del hombre a la Luna en 1969 fueron posibles gracias a estos avances. Al mismo tiempo, la tecnología de cohetes también fue utilizada para el desarrollo de misiles intercontinentales, transformando la dinámica geopolítica y la carrera armamentista durante la Guerra Fría, con un impacto duradero en la seguridad global."      ,
-    "imageUrl": "https://media.discordapp.net/attachments/976997386436104202/1281435554235289671/maldito_genio_Harry_Potter_interior_design_high_end_concept_com_cc49b463-d5d4-40cd-a40d-1b633cce11ca.png?ex=66dbb55c&is=66da63dc&hm=dfb25133fdc5b56a305230ee4725e2a83ba2f2ccd810cb2fa1de7c256f02da02&=&format=webp&quality=lossless&width=468&height=468",
+    "imageUrl": "https://th.bing.com/th/id/OIG1.A59a3NRwp09SOW0yvk.U?pid=ImgGn",
     "facts": {
       "yearOfEvent": 1926,
       "location": "USA",
       "impact": "Abrió las puertas a la exploración del espacio y cambió la dinámica militar global."
     },
     "extraInfo": {
-      "imageSource": "https://media.discordapp.net/attachments/976997386436104202/1281435554235289671/maldito_genio_Harry_Potter_interior_design_high_end_concept_com_cc49b463-d5d4-40cd-a40d-1b633cce11ca.png?ex=66dbb55c&is=66da63dc&hm=dfb25133fdc5b56a305230ee4725e2a83ba2f2ccd810cb2fa1de7c256f02da02&=&format=webp&quality=lossless&width=468&height=468"
+      "imageSource": "https://th.bing.com/th/id/OIG1.A59a3NRwp09SOW0yvk.U?pid=ImgGn"
     }
   }
 ]
