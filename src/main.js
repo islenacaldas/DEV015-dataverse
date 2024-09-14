@@ -4,6 +4,7 @@ import { filterDataByLocation, filterByYear,} from './dataFunctions.js';
 import data from './data/dataset.js';
 
 const container = document.getElementById("grid-container");
+const clearBotton = document.getElementById('limpiar');
 const countrySelect= document.getElementById('countryFilter');
 const yearSelect= document.getElementById('yearFilter');
 
@@ -24,4 +25,9 @@ yearSelect.addEventListener("change" ,() => {
  container.innerHTML="";
  const filterYear= filterByYear(data, yearSelect.value);
  container.appendChild(renderItems(filterYear));
+})
+
+clearBotton.addEventListener('click', () =>{
+    countrySelect.value="";
+    yearSelect.value="";
 })
