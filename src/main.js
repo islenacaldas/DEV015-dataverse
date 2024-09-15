@@ -28,6 +28,6 @@ yearSelect.addEventListener("change" ,() => {
 })
 
 clearBotton.addEventListener('click', () =>{
-    countrySelect.value="";
-    yearSelect.value="";
+ countrySelect.value="";
+ yearSelect.value="";
 })
