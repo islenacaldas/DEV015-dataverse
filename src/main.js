@@ -15,19 +15,19 @@ container.appendChild(renderItems(data));
 /*console.log(renderItems);*/
 
 countrySelect.addEventListener("change", ()=>{
- container.innerHTML="";
- const filteredData = filterDataByLocation(data, countrySelect.value);
- container.appendChild(renderItems(filteredData))
+  container.innerHTML="";
+  const filteredData = filterDataByLocation(data, countrySelect.value);
+  container.appendChild(renderItems(filteredData))
  
 });
 
 yearSelect.addEventListener("change" ,() => {
- container.innerHTML="";
- const filterYear= filterByYear(data, yearSelect.value);
- container.appendChild(renderItems(filterYear));
+  container.innerHTML="";
+  const filterYear= filterByYear(data, yearSelect.value);
+  container.appendChild(renderItems(filterYear));
 })
 
 clearBotton.addEventListener('click', () =>{
- countrySelect.value="";
- yearSelect.value="";
+  countrySelect.value="";
+  yearSelect.value="";
 })
