@@ -35,7 +35,7 @@
         <option value=1958>1958</option>
         <option value=1969>1969</option>
     </select>
-    <label for="countryFilter">paìs:</label>
+    <label for="countryFilter">Filtrar por paìs:</label>
     <select id="countryFilter">
         <option value="">selecciona</option>
         <option value="Ancient Greece">Antigua Grecia</option>
@@ -50,13 +50,19 @@
         <option value="United Kingdom">Reino Unido</option>
         <option value="USA">USA</option>
     </select>
-    <button id="limpiar">limpiar</button>
-    <label for="sortOrder">Ordenar:</label>
-    <select id="sortOrder">
+    <label for="sortOrderYear">Ordenar por año:</label>
+    <select id="sortOrderYear">
       <option value="">seleccionar</option>
       <option value="asc">Ascendente</option>
       <option value="desc">Descendente</option>
     </select>
+    <label for="sortOrderLocation">Ordenar por location:</label>
+    <select id="sortOrderLocation">
+      <option value="">seleccionar</option>
+      <option value="asc">Ascendente</option>
+      <option value="desc">Descendente</option>
+    </select>
+    <button id="limpiar">limpiar todo</button>
     <div id="grid-container" class="grid-container">
     </div>
     <script src="main.js" type="module"></script>

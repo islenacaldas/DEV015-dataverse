@@ -6,8 +6,9 @@ import data from './data/dataset.js';
 const container = document.getElementById("grid-container");
 const clearBotton = document.getElementById('limpiar');
 const countrySelect= document.getElementById('countryFilter');
+const sortOrderYear = document.getElementById('sortOrderYear');
+const sortOrderLocation = document.getElementById('sortOrderLocation');
 const yearSelect= document.getElementById('yearFilter');
-const sortedData= document.getElementById('sortOrder')
 
 container.appendChild(renderItems(data));
 
@@ -27,12 +28,23 @@ yearSelect.addEventListener("change" ,() => {
   container.appendChild(renderItems(filterYear));
 })
 
-//filtro de ordenamiento asendente o descendente//
-sortedData.addEventListener("change", () =>{
-  container.innerHTML="";
-  const sortedResults = sortData(data, sortData.value);
-  container.appendChild(renderItems(sortedResults))
-})
+function updateDisplay(sortedData) {
+  container.innerHTML = "";
+  container.appendChild(renderItems(sortedData));
+}
+
+sortOrderYear.addEventListener("change", () => {
+  const sortedData = sortData(data, 'year', sortOrderYear.value);
+  updateDisplay(sortedData);
+});
+
+sortOrderLocation.addEventListener("change", () => {
+  const sortedData = sortData(data, 'location', sortOrderLocation.value);
+  updateDisplay(sortedData);
+});
+
+// Mostrar datos iniciales
+updateDisplay(data);
 
 clearBotton.addEventListener('click', () =>{
   countrySelect.value="";

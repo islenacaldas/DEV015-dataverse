@@ -8,19 +8,41 @@ export const filterByYear = (data, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  console.log(`Sorting by: ${sortBy}, Order: ${sortOrder}`);
-  
-  const sortedArray = [...data].sort((a, b) => {
-    let comparison = 0;
-    if (sortBy === 'year' && a.facts && b.facts) {
-      comparison = parseInt(a.facts.yearOfEvent) - parseInt(b.facts.yearOfEvent);
-    } else if (sortBy === 'location' && a.facts && b.facts) {
-      comparison = (a.facts.location || '').localeCompare(b.facts.location || '');
-    }
-    
-    return sortOrder === 'desc' ? -comparison : comparison;
-  });
+  return [...data].sort((a, b) => {
+    let compareA, compareB;
 
-  console.log('Sorted data:', sortedArray);
-  return sortedArray;
+    switch (sortBy) {
+    case 'year':
+      compareA = a.facts.yearOfEvent;
+      compareB = b.facts.yearOfEvent;
+      break;
+    case 'location':
+      compareA = a.facts.location.toLowerCase();
+      compareB = b.facts.location.toLowerCase();
+      break;
+    default:
+      return 0; // Si no es ninguno de los casos anteriores, no se ordena
+    }
+
+    if (sortOrder === 'asc') {
+      if (compareA > compareB) {
+        return 1;
+      } else if (compareA < compareB) {
+        return -1;
+      } else {
+        return 0;
+      }
+    } else if (sortOrder === 'desc') {
+      if (compareA > compareB) {
+        return 1;
+      } else if (compareA < compareB) {
+        return -1;
+      } else {
+        return 0;
+      }
+    }
+    return 0; // Si no se especifica orden, no se ordena
+  });
 };
+
+
