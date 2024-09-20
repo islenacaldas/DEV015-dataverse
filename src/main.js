@@ -4,20 +4,20 @@ import { filterDataByLocation, filterByYear,sortData} from './dataFunctions.js';
 import data from './data/dataset.js';
 
 const container = document.getElementById("grid-container");
-const clearBotton = document.getElementById('limpiar');
-const countrySelect= document.getElementById('countryFilter');
-const sortOrderYear = document.getElementById('sortOrderYear');
-const sortOrderLocation = document.getElementById('sortOrderLocation');
-const yearSelect= document.getElementById('yearFilter');
+const clearBotton = document.querySelector('#limpiar');
+const countrySelect= document.querySelector('#countryFilter');
+const sortOrderYear = document.querySelector('#sortOrderYear');
+const sortOrderLocation = document.querySelector('#sortOrderLocation');
+const yearSelect= document.querySelector('#yearFilter');
 
 container.appendChild(renderItems(data));
 
 
 /*console.log(renderItems);*/
 
-countrySelect.addEventListener("change", ()=>{
+countrySelect.addEventListener("change", (event)=>{
   container.innerHTML="";
-  const filteredData = filterDataByLocation(data, countrySelect.value);
+  const filteredData = filterDataByLocation(data, event.target.value);
   container.appendChild(renderItems(filteredData))
  
 });
