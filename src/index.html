@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,33 +12,33 @@
    </header>
    <main>
      <label for="yearFilter">Filtrar por año:</label>
-     <select id="yearFilter">      
+     <select id="yearFilter" name="yearFilter">      
         <option value="">selecciona</option>
-        <option value=105>105</option>
-        <option value=206>206</option>
-        <option value=904>904</option>
-        <option value=1440>1440</option>
-        <option value=1793>1793</option>
-        <option value=1807>1807</option>
-        <option value=1837>1837</option>
-        <option value=1851>1851</option>
-        <option value=1875>1875</option>
-        <option value=1876>1876</option>
-        <option value=1879>1879</option>
-        <option value=1880>1880</option>
-        <option value=1895>1895</option>
-        <option value=1903>1903</option>
-        <option value=1908>1908</option>
-        <option value=1928>1928</option>
-        <option value=1940>1941</option>
-        <option value=1945>1945</option>
-        <option value=1946>1946</option>
-        <option value=1947>1947</option>
-        <option value=1958>1958</option>
-        <option value=1969>1969</option>
+        <option value="105">105</option>
+        <option value="206">206</option>
+        <option value="904">904</option>
+        <option value="1440">1440</option>
+        <option value="1793">1793</option>
+        <option value="1807">1807</option>
+        <option value="1837">1837</option>
+        <option value="1851">1851</option>
+        <option value="1875">1875</option>
+        <option value="1876">1876</option>
+        <option value="1879">1879</option>
+        <option value="1880">1880</option>
+        <option value="1895">1895</option>
+        <option value="1903">1903</option>
+        <option value="1908">1908</option>
+        <option value="1928">1928</option>
+        <option value="1941">1941</option>
+        <option value="1945">1945</option>
+        <option value="1946">1946</option>
+        <option value="1947">1947</option>
+        <option value="1958">1958</option>
+        <option value="1969">1969</option>
      </select>
-     <label for="countryFilter">Filtrar por paìs:</label>
-     <select id="countryFilter">
+     <label for="countryFilter">Filtrar por país:</label>
+     <select id="countryFilter" name="countryFilter">
         <option value="">selecciona</option>
         <option value="Ancient Greece">Antigua Grecia</option>
         <option value="Arab States">Estados Arabes</option>     
@@ -47,27 +48,34 @@
         <option value="Germany">Alemania</option>
         <option value="Italy">Italia</option>
         <option value="London">Londres</option>
-        <option value="Mesopotamia">Mesopotmia</option>
+        <option value="Mesopotamia">Mesopotamia</option>
         <option value="United Kingdom">Reino Unido</option>
         <option value="USA">USA</option>
      </select>
      <label for="sortOrderYear">Ordenar por año:</label>
-    <select id="sortOrderYear">
+    <select id="sortOrderYear" name="sortOrderYear">
       <option value="">seleccionar</option>
       <option value="asc">Ascendente</option>
       <option value="desc">Descendente</option>
     </select>
     <label for="sortOrderLocation">Ordenar por location:</label>
-    <select id="sortOrderLocation">
+    <select id="sortOrderLocation" name="sortOrderLocation">
       <option value="">seleccionar</option>
       <option value="asc">Ascendente</option>
       <option value="desc">Descendente</option>
     </select>
     <button id="limpiar">limpiar todo</button>
     <div id="grid-container" class="grid-container">
+      <ul id="inventions-list">
+        <!-- Los elementos de la lista se agregarán dinámicamente con JavaScript -->
+        <!-- Ejemplo de cómo debería ser un elemento de la lista: -->
+        <li itemtype="https://schema.org/Thing">
+          <!-- Contenido del elemento -->
+        </li>
+      </ul>
     </div>
    </main>
-    <script src="main.js" type="module"></script>
-  <footer>Creado por: Islena caldas</footer>
-</body>
+   <footer>Creado por: Islena caldas</footer>
+   <script src="main.js" type="module"></script>
+  </body>
 </html>
