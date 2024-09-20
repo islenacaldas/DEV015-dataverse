@@ -5,12 +5,13 @@
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-   <h1> Inventos que cambiaron el mundo</h1>  
-  </header>
   <body>
-    <label for="yearFilter">Filtar por año:</label>
-    <select id="yearFilter">      
+   <header>
+     <h1> Inventos que cambiaron el mundo</h1>  
+   </header>
+   <main>
+     <label for="yearFilter">Filtrar por año:</label>
+     <select id="yearFilter">      
         <option value="">selecciona</option>
         <option value=105>105</option>
         <option value=206>206</option>
@@ -34,9 +35,9 @@
         <option value=1947>1947</option>
         <option value=1958>1958</option>
         <option value=1969>1969</option>
-    </select>
-    <label for="countryFilter">Filtrar por paìs:</label>
-    <select id="countryFilter">
+     </select>
+     <label for="countryFilter">Filtrar por paìs:</label>
+     <select id="countryFilter">
         <option value="">selecciona</option>
         <option value="Ancient Greece">Antigua Grecia</option>
         <option value="Arab States">Estados Arabes</option>     
@@ -49,8 +50,8 @@
         <option value="Mesopotamia">Mesopotmia</option>
         <option value="United Kingdom">Reino Unido</option>
         <option value="USA">USA</option>
-    </select>
-    <label for="sortOrderYear">Ordenar por año:</label>
+     </select>
+     <label for="sortOrderYear">Ordenar por año:</label>
     <select id="sortOrderYear">
       <option value="">seleccionar</option>
       <option value="asc">Ascendente</option>
@@ -65,7 +66,8 @@
     <button id="limpiar">limpiar todo</button>
     <div id="grid-container" class="grid-container">
     </div>
+   </main>
     <script src="main.js" type="module"></script>
-  </body>
   <footer>Creado por: Islena caldas</footer>
+</body>
 </html>
