@@ -1,10 +1,11 @@
+
 export const filterDataByLocation = (data, value) => {
   /*console.log(data, filterBy, value)*/
   return  data.filter(item=> item.facts.location.includes(value))
 };
 
 export const filterByYear = (data, value) => {
-  return data.filter(item=> Number(item.facts.yearOfEvent)=== Number(value))
+  return data.filter(item=> item.facts.yearOfEvent=== value)
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
@@ -44,5 +45,3 @@ export const sortData = (data, sortBy, sortOrder) => {
     return 0; // Si no se especifica orden, no se ordena
   });
 };
-
-

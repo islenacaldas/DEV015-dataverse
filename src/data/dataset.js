@@ -276,7 +276,7 @@ export default [
     "description": "En el año 105 d.C., Cai Lun, un oficial chino de la dinastía Han, inventó el papel, marcando una revolución en la escritura. Utilizando fibras de plantas, como el cáñamo, el bambú y el trapo, desarrolló un material que facilitó la creación de documentos duraderos y económicos. El papel permitió la expansión del conocimiento, la administración eficiente y la preservación de textos históricos, transformando la educación y la comunicación. Este avance tuvo un impacto profundo en la cultura y la civilización, extendiéndose desde China a todo el mundo y sentando las bases para la impresión y la literatura moderna.",
     "imageUrl": "https://th.bing.com/th/id/OIG2.eTMnh9TO8k.Eh3gFvrRs?w=1024&h=1024&rs=1&pid=ImgDetMain",
     "facts": {
-      "yearOfEvent": 105,
+      "yearOfEvent":105,
       "location": "China",
       "impact": "Facilitó la difusión del conocimiento y el desarrollo de la civilización."
     },
