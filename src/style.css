@@ -1,3 +1,13 @@
+header{
+    padding: 32px;
+    font-size: medium;
+}
+main{
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    padding: 16px;
+}
 ul{
     display: grid;
     grid-template-columns: repeat(4,1fr);

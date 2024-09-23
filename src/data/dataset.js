@@ -231,7 +231,7 @@ export default [
     "description":"Alrededor del siglo IX, marcando un cambio radical en la guerra y la tecnología militar. Esta mezcla explosiva de nitrato de potasio, carbón y azufre permitió el desarrollo de armas de fuego, cañones y explosivos, transformando las tácticas y estrategias militares. La pólvora revolucionó el campo de batalla al proporcionar un poder destructivo sin precedentes, lo que llevó a la creación de nuevos armas. Su impacto alteró el curso de la historia militar, y también facilitó avances en la ingeniería y la minería, extendiendo su influencia a diversos campos de la tecnología.",
     "imageUrl": "https://th.bing.com/th/id/OIG4.q.8MMZZ5z84PbTAFu.FB?pid=ImgGn",
     "facts": {
-      "yearOfEvent": 904,
+      "yearOfEvent":904,
       "location": "China",
       "impact": "Revolucionó la guerra y llevó al desarrollo de armas de fuego."
     },

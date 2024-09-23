@@ -4,7 +4,7 @@ import { filterDataByLocation, filterByYear,sortData} from './dataFunctions.js';
 import data from './data/dataset.js';
 
 const container = document.getElementById("grid-container");
-const clearBotton = document.querySelector('#limpiar');
+const clearBotton = document.querySelector('#button-clear');
 const countrySelect= document.querySelector('#countryFilter');
 const sortOrderYear = document.querySelector('#sortOrderYear');
 const sortOrderLocation = document.querySelector('#sortOrderLocation');
