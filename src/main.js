@@ -1,55 +1,69 @@
 import { renderItems } from './view.js';
-import { filterDataByLocation, filterByYear,sortData} from './dataFunctions.js';
-
+import { filterDataByLocation, filterByYear, sortData, computeStats } from './dataFunctions.js';
 import data from './data/dataset.js';
 
 const container = document.getElementById("grid-container");
-const clearBotton = document.querySelector('#button-clear');
-const countrySelect= document.querySelector('#countryFilter');
+const clearButton = document.querySelector('#button-clear');
+const countrySelect = document.querySelector('#countryFilter');
 const sortOrderYear = document.querySelector('#sortOrderYear');
 const sortOrderLocation = document.querySelector('#sortOrderLocation');
-const yearSelect= document.querySelector('#yearFilter');
+const yearSelect = document.querySelector('#yearFilter');
+const statsButton = document.getElementById('statsButton');
+const statsDisplay = document.getElementById('statsDisplay');
 
-container.appendChild(renderItems(data));
-
-
-/*console.log(renderItems);*/
-
-countrySelect.addEventListener("change", (event)=>{
-  container.innerHTML="";
-  const filteredData = filterDataByLocation(data, event.target.value);
-  container.appendChild(renderItems(filteredData))
- 
-});
-
-yearSelect.addEventListener("change" ,() => {
-  container.innerHTML="";
-  const filterYear= filterByYear(data, yearSelect.value);
-  container.appendChild(renderItems(filterYear));
-})
-
-function updateDisplay(sortedData) {
+// Función para actualizar la visualización
+function updateDisplay(dataToDisplay) {
   container.innerHTML = "";
-  container.appendChild(renderItems(sortedData));
+  container.appendChild(renderItems(dataToDisplay));
 }
 
+// Inicialización
+updateDisplay(data);
+
+// Filtro por país
+countrySelect.addEventListener("change", (event) => {
+  const filteredData = filterDataByLocation(data, event.target.value);
+  updateDisplay(filteredData);
+});
+
+// Filtro por año
+yearSelect.addEventListener("change", () => {
+  const filteredData = filterByYear(data, yearSelect.value);
+  updateDisplay(filteredData);
+});
+
+// Ordenar por año
 sortOrderYear.addEventListener("change", () => {
   const sortedData = sortData(data, 'year', sortOrderYear.value);
   updateDisplay(sortedData);
 });
 
+// Ordenar por ubicación
 sortOrderLocation.addEventListener("change", () => {
   const sortedData = sortData(data, 'location', sortOrderLocation.value);
   updateDisplay(sortedData);
 });
 
-// Mostrar datos iniciales
-updateDisplay(data);
+// Limpiar filtros
+clearButton.addEventListener('click', () => {
+  countrySelect.value = "";
+  yearSelect.value = "";
+  sortOrderYear.value = "";
+  sortOrderLocation.value = "";
+  updateDisplay(data);
+});
 
-clearBotton.addEventListener('click', () =>{
-  countrySelect.value="";
-  yearSelect.value="";
-  sortData.value="";
-  container.innerHTML="";
-  container.appendChild(renderItems(data))
-})
+// Mostrar estadísticas
+statsButton.addEventListener('click', () => {
+  const stats = computeStats(data);
+  displayStats(stats);
+});
+
+// Función para mostrar estadísticas
+function displayStats(stats) {
+  let statsHTML = '<h2>Estadísticas de inventos por país:</h2>';
+  for (const [country, percentage] of Object.entries(stats)) {
+    statsHTML += `<p>${percentage}% de inventos fueron creados en ${country}</p>`;
+  }
+  statsDisplay.innerHTML = statsHTML;
+}

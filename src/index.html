@@ -8,7 +8,7 @@
   </head>
   <body>
    <header>
-     <h1> Inventos que cambiaron el mundo</h1>  
+     <h1>Inventos que cambiaron el mundo</h1>  
    </header>
    <main>
      <label for="yearFilter">Filtrar por año:</label>
@@ -35,10 +35,11 @@
         <option value="1946">1946</option>
         <option value="1947">1947</option>
         <option value="1958">1958</option>
-        <option value="1969">1969</option>
+        <option value="1969">1969</option>. 
      </select>
      <label for="countryFilter">Filtrar por país:</label>
      <select id="countryFilter" name="countryFilter">
+        <option value="">selecciona</option>
         <option value="">selecciona</option>
         <option value="Ancient Greece">Antigua Grecia</option>
         <option value="Arab States">Estados Arabes</option>     
@@ -53,7 +54,7 @@
         <option value="USA">USA</option>
      </select>
      <label for="sortOrderYear">Ordenar por año:</label>
-    <select id="sortOrderYear" name="sortOrderYear">
+    <select id="sortOrderYear" name="sort-order">
       <option value="">seleccionar</option>
       <option value="asc">Ascendente</option>
       <option value="desc">Descendente</option>
@@ -65,12 +66,19 @@
       <option value="desc">Descendente</option>
     </select>
     <button id="button-clear">limpiar todo</button>
+
+    <button id="statsButton">% de inventos creados por cada país</button>
+    
    </main>
    <div id="grid-container" class="grid-container">
     <ul id="inventions-list">
         <li> </li>
     </ul>
-  </div>
+   </div>
+   
+   <!-- Div para mostrar las estadísticas -->
+   <div id="statsDisplay"></div>
+   
    <footer>Creado por: Islena caldas</footer>
    <script src="main.js" type="module"></script>
   </body>

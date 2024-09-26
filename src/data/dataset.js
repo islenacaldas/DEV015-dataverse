@@ -7,7 +7,7 @@ export default [
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIG1.Sv__i1t9gVutR_Yaeho.&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1440,
-      "location": "Mainz, Germany",
+      "location": "Germany",
       "impact": "Revolucionó la educación, la comunicación y aceleró el Renacimiento."
     },
     "extraInfo": {
@@ -22,7 +22,7 @@ export default [
     "imageUrl": "https://tse3.mm.bing.net/th?id=OIG1.xwwfIbhW9pGYjUIU4Nxp&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1879,
-      "location": "Menlo Park, USA",
+      "location": "USA",
       "impact": "Transformó la vida diaria, extendiendo la actividad humana a las horas de la noche."
     },
     "extraInfo": {
@@ -37,7 +37,7 @@ export default [
     "imageUrl": "https://tse3.mm.bing.net/th?id=OIG3.gEBt4DiyTSSCxJC7V9XJ&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1876,
-      "location": "Boston, USA",
+      "location": "USA",
       "impact": "Conectó al mundo de manera instantánea, transformando la comunicación personal y comercial."
     },
     "extraInfo": {
@@ -52,7 +52,7 @@ export default [
     "imageUrl": "https://tse3.mm.bing.net/th?id=OIG2.F0twZ03fWQdpsTq6jVgV&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1903,
-      "location": "Kitty Hawk, USA",
+      "location": "USA",
       "impact": "Inició la era de la aviación, conectando el mundo de manera más rápida que nunca."
     },
     "extraInfo": {
@@ -82,7 +82,7 @@ export default [
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIG2.HgeZ_ZZQAexWRZTXhsak&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1837,
-      "location": "New York, USA",
+      "location": "USA",
       "impact": "Transformó las comunicaciones, facilitando el intercambio de información de forma casi instantánea."
     },
     "extraInfo": {
@@ -97,7 +97,7 @@ export default [
     "imageUrl": "https://tse4.mm.bing.net/th?id=OIG4._F9w83SWL3gsbg8zDIAh&pid=ImgGn",
     "facts": {
       "yearOfEvent": 1895,
-      "location": "Bologna, Italy",
+      "location": "Italy",
       "impact": "Revolucionó las comunicaciones y el entretenimiento, permitiendo la transmisión de información a grandes audiencias."
     },
     "extraInfo": {
@@ -238,6 +238,7 @@ export default [
     "extraInfo": {
       "imageSource": "https://th.bing.com/th/id/OIG4.q.8MMZZ5z84PbTAFu.FB?pid=ImgGn",
     }
+    
   },
   {
     "id": "compass",

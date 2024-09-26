@@ -1,4 +1,3 @@
-
 export const filterDataByLocation = (data, value) => {
   return  data.filter(item=> item.facts.location.includes(value))
 };
@@ -34,3 +33,26 @@ export const sortData = (data, sortBy, sortOrder) => {
     return sortOrder === 'desc' ? compare * -1 : compare;
   });
 };
+
+export function computeStats(data) {
+  const countryCount = {};
+  const totalInventions = data.length;
+
+  // Contar inventos por país
+  data.forEach(item => {
+    const country = item.facts.location;
+    countryCount[country] = (countryCount[country] || 0) + 1;
+  });
+
+  // Calcular porcentajes
+  const stats = {};
+  for (const [country, count] of Object.entries(countryCount)) {
+    stats[country] = ((count / totalInventions) * 100).toFixed(2);
+  }
+
+  return stats;
+}
+
+
+
+
