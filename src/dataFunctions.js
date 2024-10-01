@@ -47,7 +47,7 @@ export function computeStats(data) {
   // Calcular porcentajes
   const stats = {};
   for (const [country, count] of Object.entries(countryCount)) {
-    stats[country] = ((count / totalInventions) * 100).toFixed(2);
+    stats[country] = Math.round((count / totalInventions) * 100);
   }
 
   return stats;

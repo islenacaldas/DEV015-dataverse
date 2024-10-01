@@ -14,6 +14,7 @@ const statsDisplay = document.getElementById('statsDisplay');
 // Función para actualizar la visualización
 function updateDisplay(dataToDisplay) {
   container.innerHTML = "";
+  statsDisplay.innerHTML="";
   container.appendChild(renderItems(dataToDisplay));
 }
 
@@ -55,6 +56,7 @@ clearButton.addEventListener('click', () => {
 
 // Mostrar estadísticas
 statsButton.addEventListener('click', () => {
+  container.innerHTML="";
   const stats = computeStats(data);
   displayStats(stats);
 });
@@ -63,7 +65,7 @@ statsButton.addEventListener('click', () => {
 function displayStats(stats) {
   let statsHTML = '<h2>Estadísticas de inventos por país:</h2>';
   for (const [country, percentage] of Object.entries(stats)) {
-    statsHTML += `<p>${percentage}% de inventos fueron creados en ${country}</p>`;
+    statsHTML += `<p> El ${percentage}% de inventos fueron creados por ${country}</p>`;
   }
   statsDisplay.innerHTML = statsHTML;
 }
