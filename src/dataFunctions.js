@@ -1,9 +1,10 @@
+// Mantenemos tus funciones originales sin cambios
 export const filterDataByLocation = (data, value) => {
-  return  data.filter(item=> item.facts.location.includes(value))
+  return data.filter(item => item.facts.location.includes(value));
 };
 
 export const filterByYear = (data, value) => {
-  return data.filter(item=> item.facts.yearOfEvent=== value)
+  return data.filter(item => item.facts.yearOfEvent == value);
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
@@ -38,13 +39,11 @@ export function computeStats(data) {
   const countryCount = {};
   const totalInventions = data.length;
 
-  // Contar inventos por país
   data.forEach(item => {
     const country = item.facts.location;
     countryCount[country] = (countryCount[country] || 0) + 1;
   });
 
-  // Calcular porcentajes
   const stats = {};
   for (const [country, count] of Object.entries(countryCount)) {
     stats[country] = Math.round((count / totalInventions) * 100);
@@ -53,6 +52,45 @@ export function computeStats(data) {
   return stats;
 }
 
+// Objeto para mantener el estado de los filtros y ordenamiento
+const state = {
+  location: '',
+  year: '',
+  sortBy: '',
+  sortOrder: ''
+};
 
+// Función combinada actualizada
+export function processData(data, options = {}) {
+  // Actualizar el estado con las nuevas opciones
+  if (options.location !== undefined) state.location = options.location;
+  if (options.year !== undefined) state.year = options.year;
+  if (options.sortBy !== undefined) state.sortBy = options.sortBy;
+  if (options.sortOrder !== undefined) state.sortOrder = options.sortOrder;
 
+  let processedData = [...data];
 
+  if (state.location) {
+    processedData = filterDataByLocation(processedData, state.location);
+  }
+
+  if (state.year) {
+    processedData = filterByYear(processedData, state.year);
+  }
+
+  if (state.sortBy) {
+    processedData = sortData(processedData, state.sortBy, state.sortOrder);
+  }
+
+  const stats = computeStats(processedData);
+
+  return { processedData, stats };
+}
+
+// Función para limpiar todos los filtros
+export function clearAllFilters() {
+  state.location = '';
+  state.year = '';
+  state.sortBy = '';
+  state.sortOrder = '';
+}
