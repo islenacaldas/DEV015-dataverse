@@ -4,7 +4,7 @@ export const filterDataByLocation = (data, value) => {
 };
 
 export const filterByYear = (data, value) => {
-  return data.filter(item => item.facts.yearOfEvent == value);
+  return data.filter(item => item.facts.yearOfEvent === value);
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
@@ -45,7 +45,7 @@ export function computeStats(data) {
   });
 
   const stats = {};
-  for (const [country, count] of Object.entries(countryCount)) {
+  for (const [country, count] of Object.entries(countryCount)){
     stats[country] = Math.round((count / totalInventions) * 100);
   }
 

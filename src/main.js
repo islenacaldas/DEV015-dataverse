@@ -61,7 +61,10 @@ sortOrderLocation.addEventListener("change", () => {
   applyFiltersAndSort();
 });
 statsButton.addEventListener('click', () => {
-  const stats = applyFiltersAndSort.lastStats || computeStats(data);
+  // Siempre calcula las estadísticas basadas en los datos filtrados actuales
+  const currentFilteredData = getCurrentFilteredData(); // Necesitas implementar esta función
+  const stats = computeStats(currentFilteredData);
+  
   let statsHTML = '<h2>Porcentaje de inventos por país:</h2>';
   for (const country in stats) {
     statsHTML += `<p>${country}: ${stats[country]}%</p>`;
@@ -69,6 +72,28 @@ statsButton.addEventListener('click', () => {
   container.innerHTML = ""; // Limpiar las cards
   statsDisplay.innerHTML = statsHTML; // Mostrar solo las estadísticas
 });
+
+// Implementa esta función para obtener los datos filtrados actuales
+function getCurrentFilteredData() {
+  let filteredData = [...data];
+
+  if (countryFilter.value) {
+    filteredData = filterDataByLocation(filteredData, countryFilter.value);
+  }
+
+  if (yearFilter.value) {
+    filteredData = filterByYear(filteredData, yearFilter.value);
+  }
+
+  if (sortOrderYear.value) {
+    filteredData = sortData(filteredData, "year", sortOrderYear.value);
+  } else if (sortOrderLocation.value) {
+    filteredData = sortData(filteredData, "location", sortOrderLocation.value);
+  }
+
+  return filteredData;
+}
+
 
 
 clearButton.addEventListener('click', () => {
