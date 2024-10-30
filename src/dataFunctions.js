@@ -1,96 +1,69 @@
-// Mantenemos tus funciones originales sin cambios
-export const filterDataByLocation = (data, value) => {
-  return data.filter(item => item.facts.location.includes(value));
-};
+// dataFunctions.js
+export const filterDataByLocation =(data, location)=> {
+  return data.filter(item => item.facts.location.toLowerCase().includes(location.toLowerCase()));
+}
 
-export const filterByYear = (data, value) => {
-  return data.filter(item => item.facts.yearOfEvent === value);
-};
+export function filterByYear(data, year) {
+  return data.filter(item => item.facts.yearOfEvent.toString() === year);
+}
 
-export const sortData = (data, sortBy, sortOrder) => {
-  return [...data].sort((a, b) => {
-    let compareA, compareB;
-
-    switch (sortBy) {
-    case 'year':
-      compareA = a.facts.yearOfEvent;
-      compareB = b.facts.yearOfEvent;
-      break;
-    case 'location':
-      compareA = a.facts.location.toLowerCase();
-      compareB = b.facts.location.toLowerCase();
-      break;
-    default:
-      return 0;
+export function sortData(data, property, order) {
+  const sortedData = [...data];
+  
+  sortedData.sort((a, b) => {
+    let valueA = property === 'year' ? a.facts.yearOfEvent : a.facts.location;
+    let valueB = property === 'year' ? b.facts.yearOfEvent : b.facts.location;
+    
+    if (typeof valueA === 'string') valueA = valueA.toLowerCase();
+    if (typeof valueB === 'string') valueB = valueB.toLowerCase();
+    
+    if (order === 'asc') {
+      return valueA > valueB ? 1 : -1;
+    } else {
+      return valueA < valueB ? 1 : -1;
     }
-
-    let compare = 0;
-    if (compareA > compareB) {
-      compare = 1;
-    } else if (compareA < compareB) {
-      compare = -1;
-    }
-
-    return sortOrder === 'desc' ? compare * -1 : compare;
   });
-};
+  
+  return sortedData;
+}
 
 export function computeStats(data) {
-  const countryCount = {};
-  const totalInventions = data.length;
-
+  const total = data.length;
+  const locationCount = {};
+  
   data.forEach(item => {
-    const country = item.facts.location;
-    countryCount[country] = (countryCount[country] || 0) + 1;
+    const location = item.facts.location;
+    locationCount[location] = (locationCount[location] || 0) + 1;
   });
-
+  
   const stats = {};
-  for (const [country, count] of Object.entries(countryCount)){
-    stats[country] = Math.round((count / totalInventions) * 100);
+  for (const location in locationCount) {
+    stats[location] = ((locationCount[location] / total) * 100).toFixed(1);
   }
-
+  
   return stats;
 }
 
-// Objeto para mantener el estado de los filtros y ordenamiento
-const state = {
-  location: '',
-  year: '',
-  sortBy: '',
-  sortOrder: ''
-};
-
-// Función combinada actualizada
-export function processData(data, options = {}) {
-  // Actualizar el estado con las nuevas opciones
-  if (options.location !== undefined) state.location = options.location;
-  if (options.year !== undefined) state.year = options.year;
-  if (options.sortBy !== undefined) state.sortBy = options.sortBy;
-  if (options.sortOrder !== undefined) state.sortOrder = options.sortOrder;
-
-  let processedData = [...data];
-
-  if (state.location) {
-    processedData = filterDataByLocation(processedData, state.location);
-  }
-
-  if (state.year) {
-    processedData = filterByYear(processedData, state.year);
-  }
-
-  if (state.sortBy) {
-    processedData = sortData(processedData, state.sortBy, state.sortOrder);
-  }
-
-  const stats = computeStats(processedData);
-
-  return { processedData, stats };
+export function clearAllFilters() {
+  // Implementa la lógica de limpieza si es necesaria
 }
 
-// Función para limpiar todos los filtros
-export function clearAllFilters() {
-  state.location = '';
-  state.year = '';
-  state.sortBy = '';
-  state.sortOrder = '';
+export function getCurrentFilteredData(data, filters) {
+  let filteredData = [...data];
+
+  if (filters.countryFilter) {
+    filteredData = filterDataByLocation(filteredData, filters.countryFilter);
+  }
+
+  if (filters.yearFilter) {
+    filteredData = filterByYear(filteredData, filters.yearFilter);
+  }
+
+  if (filters.sortOrderYear) {
+    filteredData = sortData(filteredData, "year", filters.sortOrderYear);
+  } else if (filters.sortOrderLocation) {
+    filteredData = sortData(filteredData, "location", filters.sortOrderLocation);
+  }
+
+  return filteredData;
 }

@@ -1,10 +1,9 @@
+// main.js
 import { renderItems } from "./view.js";
 import {
-  filterDataByLocation,
-  filterByYear,
-  sortData,
   computeStats,
   clearAllFilters,
+  getCurrentFilteredData
 } from "./dataFunctions.js";
 import data from "./data/dataset.js";
 
@@ -28,25 +27,15 @@ function updateDisplay(dataToDisplay) {
 updateDisplay(data);
 
 function applyFiltersAndSort() {
-  let filteredData = [...data];
+  const filters = {
+    countryFilter: countryFilter.value,
+    yearFilter: yearFilter.value,
+    sortOrderYear: sortOrderYear.value,
+    sortOrderLocation: sortOrderLocation.value
+  };
 
-  if (countryFilter.value) {
-    filteredData = filterDataByLocation(filteredData, countryFilter.value);
-  }
-
-  if (yearFilter.value) {
-    filteredData = filterByYear(filteredData, yearFilter.value);
-  }
-
-  if (sortOrderYear.value) {
-    filteredData = sortData(filteredData, "year", sortOrderYear.value);
-  } else if (sortOrderLocation.value) {
-    filteredData = sortData(filteredData, "location", sortOrderLocation.value);
-  }
-
+  const filteredData = getCurrentFilteredData(data, filters);
   updateDisplay(filteredData);
-
-  // Guardar las estadísticas para uso posterior
   applyFiltersAndSort.lastStats = computeStats(filteredData);
 }
 
@@ -60,41 +49,25 @@ sortOrderLocation.addEventListener("change", () => {
   sortOrderYear.value = ""; // Limpiar el otro ordenamiento
   applyFiltersAndSort();
 });
+
 statsButton.addEventListener('click', () => {
-  // Siempre calcula las estadísticas basadas en los datos filtrados actuales
-  const currentFilteredData = getCurrentFilteredData(); // Necesitas implementar esta función
+  const filters = {
+    countryFilter: countryFilter.value,
+    yearFilter: yearFilter.value,
+    sortOrderYear: sortOrderYear.value,
+    sortOrderLocation: sortOrderLocation.value
+  };
+  
+  const currentFilteredData = getCurrentFilteredData(data, filters);
   const stats = computeStats(currentFilteredData);
   
-  let statsHTML = '<h2>Porcentaje de inventos por país:</h2>';
+  let statsHTML = 'Porcentaje de inventos por país:\n\n';
   for (const country in stats) {
-    statsHTML += `<p>${country}: ${stats[country]}%</p>`;
+    statsHTML += `${country}: ${stats[country]}%\n`;
   }
-  container.innerHTML = ""; // Limpiar las cards
-  statsDisplay.innerHTML = statsHTML; // Mostrar solo las estadísticas
+  container.innerHTML = "";
+  statsDisplay.innerHTML = statsHTML;
 });
-
-// Implementa esta función para obtener los datos filtrados actuales
-function getCurrentFilteredData() {
-  let filteredData = [...data];
-
-  if (countryFilter.value) {
-    filteredData = filterDataByLocation(filteredData, countryFilter.value);
-  }
-
-  if (yearFilter.value) {
-    filteredData = filterByYear(filteredData, yearFilter.value);
-  }
-
-  if (sortOrderYear.value) {
-    filteredData = sortData(filteredData, "year", sortOrderYear.value);
-  } else if (sortOrderLocation.value) {
-    filteredData = sortData(filteredData, "location", sortOrderLocation.value);
-  }
-
-  return filteredData;
-}
-
-
 
 clearButton.addEventListener('click', () => {
   yearFilter.value = '';
@@ -103,7 +76,8 @@ clearButton.addEventListener('click', () => {
   sortOrderLocation.value = '';
   statsDisplay.innerHTML = '';
   clearAllFilters();
-  updateDisplay(data); // Mostrar todos los datos originales
+  updateDisplay(data);
 });
+
 // Mostrar todos los inventos al cargar la página
 updateDisplay(data);
